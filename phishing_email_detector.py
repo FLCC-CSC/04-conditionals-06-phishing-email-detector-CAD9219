@@ -16,12 +16,21 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
 
+subject_line = input('Enter the email subject line:')
 
+if 'urgent' or 'immediate action required' in subject_line.lower:
+    print('HIGH RISK: Possible phishing attempt.')
 
+elif 'win' or 'free' in subject_line.lower:
+    print('MEDIUM RISK: Suspicious offer detected.')
 
+elif 'password reset' in subject_line.lower:
+    print('LOW RISK: Verify legitimacy with sender.') 
 
+else:
+    print('No phishing indicators detected.')
 
-
+print('Analyzed subject:', '"'+subject_line+'"')
 
 
 ########### END YER CODE ABOVE THIS LINE ###########
