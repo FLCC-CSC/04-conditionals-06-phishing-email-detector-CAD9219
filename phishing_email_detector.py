@@ -33,7 +33,7 @@ elif 'password reset' in subject_lower:
 else:
     print('No phishing indicators detected.')
 
-print('------------------------ \nAnalyzed subject:', '"'+subject_lower+'"')
+print('------------------------\nAnalyzed subject:', '"'+subject_lower+'"')
 
 
 ########### END YER CODE ABOVE THIS LINE ###########
